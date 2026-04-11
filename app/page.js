@@ -16,8 +16,8 @@ function EventCard({ evt }) {
 
   return (
     <div className="event-card">
-      <div 
-        className="event-card-header" 
+      <div
+        className="event-card-header"
         onClick={() => setIsExpanded(!isExpanded)}
       >
         <div className="event-time-row">
@@ -26,7 +26,7 @@ function EventCard({ evt }) {
         </div>
         <h3 className="event-title">{evt.title}</h3>
       </div>
-      
+
       {isExpanded && (
         <div className="event-expanded-content">
           {evt.image && (
@@ -36,9 +36,9 @@ function EventCard({ evt }) {
             </div>
           )}
           <p className="event-desc">{evt.description}</p>
-          
+
           <div className="event-actions">
-            <a 
+            <a
               href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(evt.location.mapQuery || evt.title)}`}
               target="_blank"
               rel="noreferrer"
@@ -77,11 +77,11 @@ export default function Home() {
       <main style={{ paddingBottom: '80px' }}>
         <header className="app-header">
           <h1 className="app-title">Napoli Trip</h1>
-          <p className="app-subtitle">14 - 17 Maggio • Famiglia & Accessibilità</p>
-          
+          <p className="app-subtitle">14 - 17 Maggio • Powered by Fede</p>
+
           <div className="day-tabs">
             {itineraryData.map((day, idx) => (
-              <button 
+              <button
                 key={day.id}
                 className={`day-tab ${idx === activeDayIdx ? 'active' : ''}`}
                 onClick={() => setActiveDayIdx(idx)}
@@ -116,14 +116,14 @@ export default function Home() {
       </main>
 
       <nav className="bottom-nav">
-        <button 
+        <button
           className={`nav-item ${activeTab === 'itinerary' ? 'active' : ''}`}
           onClick={() => setActiveTab('itinerary')}
         >
           <ListClassicIcon />
           <span>Itinerario</span>
         </button>
-        <button 
+        <button
           className={`nav-item ${activeTab === 'map' ? 'active' : ''}`}
           onClick={() => setActiveTab('map')}
         >
