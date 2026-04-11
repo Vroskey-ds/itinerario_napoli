@@ -10,7 +10,7 @@ export const itineraryData = [
         time: "10:42",
         title: "Arrivo a Napoli Centrale",
         description: "Arrivo in stazione con treno Frecciarossa. L'avventura all'ombra del Vesuvio inizia!",
-        type: "travel", 
+        type: "travel",
         location: { lat: 40.8528, lng: 14.2718, mapQuery: "Napoli Centrale" }
       },
       {
@@ -31,44 +31,52 @@ export const itineraryData = [
         location: { lat: 40.8542, lng: 14.2646, mapQuery: "Via Cesare Rosaroll, 6, 80139 Napoli" }
       },
       {
-        id: "g4",
-        time: "12:15",
-        title: "Duomo di Napoli (San Gennaro)",
-        description: "Procedendo dritti verso sud da Via Foria, si arriva al maestoso Duomo di Napoli. Qui è custodita l'ampolla col sangue di San Gennaro.\n\n♿ Accessibilità: Il percorso e la chiesa sono in piano e totalmente accessibili.",
-        type: "attraction",
-        location: { lat: 40.8528, lng: 14.2594, mapQuery: "Duomo di Napoli" }
-      },
-      {
-        id: "g-lunch",
-        time: "13:30",
-        title: "Pranzo Street Food ai Tribunali",
-        description: "Usciti dal Duomo, svoltando a ridosso in Via dei Tribunali, prendiamo un cuoppo fritto al volo per non appesantirci.",
-        type: "food",
-        location: { lat: 40.8502, lng: 14.2541, mapQuery: "Via dei Tribunali" }
-      },
-      {
         id: "g5",
-        time: "14:30",
+        time: "12:15",
         title: "Vomero via Funicolare",
-        description: "Continuiamo a camminare verso ovest verso Via Toledo per prendere la storica Funicolare Centrale e salire sulla collina del Vomero.",
+        description: "Camminiamo verso ovest fino a Via Toledo per prendere la storica Funicolare Centrale e salire sulla collina del Vomero. La giornata è tutta nostra!",
         type: "travel",
         image: "/images/funicolare_napoli.png",
         location: { lat: 40.8441, lng: 14.2373, mapQuery: "Funicolare Centrale Napoli" }
       },
       {
         id: "g6",
-        time: "15:30",
-        title: "Castel Sant'Elmo e San Martino",
-        description: "Usciti dalla funicolare, una breve passeggiata porta alla fortezza di Castel Sant'Elmo. Offre un panorama a 360 gradi su tutto il Golfo.\n\n♿ Accessibilità: Totalmente accessibile con sistema di ascensori interni.",
+        time: "13:00",
+        title: "Castel Sant'Elmo",
+        description: "Usciti dalla funicolare, una breve passeggiata porta alla fortezza stellare di Castel Sant'Elmo. Offre un panorama a 360° su tutto il Golfo di Napoli, il Vesuvio e le isole.\n\n♿ Accessibilità: Totalmente accessibile con sistema di ascensori interni.",
         type: "attraction",
         image: "/images/castel_santelmo.png",
         location: { lat: 40.8436, lng: 14.2386, mapQuery: "Castel Sant'Elmo" }
       },
       {
+        id: "g-certosa",
+        time: "14:30",
+        title: "Certosa e Museo di San Martino",
+        description: "A due passi dal Castel Sant'Elmo, l'ex monastero certosino è uno dei complessi più belli di Napoli. Si visita la splendida chiesa barocca con affreschi di Luca Giordano, il Chiostro Grande e la sezione museale con il celebre Presepe Cuciniello (800 statuine settecentesche). Le terrazze panoramiche sono mozzafiato. Ingresso €6.\n\n♿ Accessibilità: Presente ascensore per i principali livelli.",
+        type: "attraction",
+        location: { lat: 40.8422, lng: 14.2385, mapQuery: "Certosa di San Martino Napoli" }
+      },
+      {
+        id: "g-villa",
+        time: "16:15",
+        title: "Villa Floridiana e Parco",
+        description: "Breve passeggiata fino a questa villa neoclassica immersa in un romantico giardino all'inglese con vista sul Golfo. Il parco è gratuito e perfetto per una pausa rilassante. All'interno della villa il Museo Duca di Martina raccoglie oltre 6.000 opere di ceramiche e arti decorative (€4, chiude alle 17:00 — consigliamo il parco al tramonto).",
+        type: "attraction",
+        location: { lat: 40.8392, lng: 14.2283, mapQuery: "Villa Floridiana Napoli" }
+      },
+      {
+        id: "g-scarlatti",
+        time: "17:30",
+        title: "Passeggiata su Via Scarlatti",
+        description: "Il salotto del Vomero: la via pedonale principale del quartiere, piena di boutique, caffè e locali per l'aperitivo. Un'atmosfera tutta napoletana lontana dai turisti del centro. Perfetta per uno spritz o un caffè prima di scendere.",
+        type: "attraction",
+        location: { lat: 40.8434, lng: 14.2297, mapQuery: "Via Scarlatti Napoli Vomero" }
+      },
+      {
         id: "g7",
         time: "20:00",
         title: "Pizza da Zia Esterina Sorbillo",
-        description: "Scesi nuovamente in centro con la funicolare, a due passi troviamo una delle pizze fritte migliori della città. Cuore bollente di ricotta, cicoli e provola.",
+        description: "Scesi dal Vomero con la funicolare, a due passi troviamo una delle pizze fritte migliori della città. Cuore bollente di ricotta, cicoli e provola: il modo perfetto per concludere la giornata.",
         type: "food",
         image: "/images/pizza_fritta.png",
         location: { lat: 40.8407, lng: 14.2483, mapQuery: "Zia Esterina Sorbillo Pizza Fritta" }
@@ -91,16 +99,32 @@ export const itineraryData = [
       },
       {
         id: "v1",
-        time: "11:00",
-        title: "Fiocchi di Neve da Poppella",
-        description: "Facciamo base all'hotel alla Sanità e proviamo i 'Fiocchi di Neve' della Pasticceria Poppella: brioche soffici ripiene di delicata crema al latte.",
+        time: "10:15",
+        title: "Colazione da SfogliateLAB",
+        description: "La pasticceria è proprio di fronte all'uscita della stazione, all'angolo con Corso Novara — impossibile mancare. Nata agli inizi del '900 con la famiglia Ferrieri, unisce la tradizione pasticcera napoletana alla gastronomia locale: sfogliatelle, babà e rosticceria fresca. Il posto giusto per il primo assaggio di Napoli insieme ai genitori.",
         type: "food",
-        image: "/images/poppella_fiocchi.png",
-        location: { lat: 40.8576, lng: 14.2520, mapQuery: "Pasticceria Poppella Napoli" }
+        location: { lat: 40.8516, lng: 14.2724, mapQuery: "SfogliateLAB Napoli Piazza Garibaldi" }
+      },
+      {
+        id: "g4",
+        time: "11:45",
+        title: "Duomo di Napoli (San Gennaro)",
+        description: "Scendendo verso il centro storico si arriva al maestoso Duomo di Napoli. Qui è custodita l'ampolla col sangue di San Gennaro, tra le reliquie più venerate al mondo.\n\n♿ Accessibilità: Il percorso e la chiesa sono in piano e totalmente accessibili.",
+        type: "attraction",
+        location: { lat: 40.8528, lng: 14.2594, mapQuery: "Duomo di Napoli" }
+      },
+      {
+        id: "v2",
+        time: "13:15",
+        title: "Pranzo Antica Pizzeria ai Tribunali",
+        description: "A pochi passi dal Duomo, ci sediamo per riposare le gambe e gustare una verace Margherita in uno dei templi della pizza napoletana (Di Matteo o Sorbillo).",
+        type: "food",
+        image: "/images/via_tribunali.png",
+        location: { lat: 40.8504, lng: 14.2568, mapQuery: "Via dei Tribunali Napoli" }
       },
       {
         id: "v4",
-        time: "12:00",
+        time: "14:30",
         title: "Napoli Sotterranea (Divisione Gruppi)",
         description: "Scendendo verso Piazza San Gaetano. Un viaggio immersivo a 40 metri di profondità tra acquedotti romani e rifugi antiaerei.\n\n♿ Accessibilità: Non adatto alle carrozzine. Attesa piacevole ai baretti all'aperto di Piazza San Gaetano.",
         type: "attraction",
@@ -109,7 +133,7 @@ export const itineraryData = [
       },
       {
         id: "v3",
-        time: "13:30",
+        time: "16:00",
         title: "San Gregorio Armeno",
         description: "Usciti dalla Napoli Sotterranea, ci si trova proprio all'imbocco di San Gregorio Armeno, la via dei maestri presepiai. Perfettamente lineare.\n\n♿ Attenzione all'alta densità di persone.",
         type: "attraction",
@@ -117,17 +141,8 @@ export const itineraryData = [
         location: { lat: 40.8494, lng: 14.2573, mapQuery: "Via San Gregorio Armeno" }
       },
       {
-        id: "v2",
-        time: "14:15",
-        title: "Pranzo Antica Pizzeria",
-        description: "Attraversando un vicolo e rimanendo in zona, ci sediamo per riposare le gambe e gustare una verace Margherita ai Tribunali (Di Matteo o Sorbillo).",
-        type: "food",
-        image: "/images/via_tribunali.png",
-        location: { lat: 40.8504, lng: 14.2568, mapQuery: "Via dei Tribunali Napoli" }
-      },
-      {
         id: "v2_bis",
-        time: "15:45",
+        time: "16:45",
         title: "Cristo Velato",
         description: "Sempre procedendo in modo lineare giungiamo alla limitrofa Cappella Sansevero per l'imperdibile Cristo Velato. (Da prenotare online!)\n\n♿ Accessibilità: Presente rampa, ma spazi molto ristretti intorno alla cappella.",
         type: "attraction",
@@ -136,7 +151,7 @@ export const itineraryData = [
       },
       {
         id: "v1_bis",
-        time: "17:00",
+        time: "18:00",
         title: "Chiostro Maiolicato di Santa Chiara",
         description: "Scendendo verso Spaccanapoli si arriva comodamente al Monastero di Santa Chiara. Perfetto per il tardo pomeriggio.\n\n♿ Accessibilità: Completamente in piano e all'aperto.",
         type: "attraction",
@@ -177,8 +192,17 @@ export const itineraryData = [
         location: { lat: 40.8386, lng: 14.2452, mapQuery: "Murales Maradona Napoli" }
       },
       {
+        id: "s-poppella",
+        time: "11:30",
+        title: "Fiocchi di Neve da Poppella",
+        description: "A pochi passi dai Quartieri, la sede di Via Santa Brigida è nel cuore della città accanto alla Galleria Umberto I e al Teatro San Carlo. I 'Fiocchi di Neve' sono brioche soffici ripiene di crema al latte: il dolce più iconico di Napoli dopo la sfogliatella.",
+        type: "food",
+        image: "/images/poppella_fiocchi.png",
+        location: { lat: 40.8371, lng: 14.2481, mapQuery: "Pasticceria Poppella Via Santa Brigida Napoli" }
+      },
+      {
         id: "s3",
-        time: "12:00",
+        time: "12:15",
         title: "Piazza Plebiscito e Gambrinus",
         description: "Scesi dai quartieri si sfocia nel salotto di Napoli: l'enorme Piazza del Plebiscito e l'adiacente elegante Caffè Gambrinus per un espresso d'epoca.",
         type: "attraction",
@@ -187,7 +211,7 @@ export const itineraryData = [
       },
       {
         id: "s4",
-        time: "13:00",
+        time: "13:15",
         title: "Galleria Umberto I",
         description: "Esattamente di fronte, la sfavillante Galleria Umberto I. Un pranzo o una zeppola prima di incamminarci sul mare.",
         type: "attraction",
@@ -227,21 +251,22 @@ export const itineraryData = [
     id: "domenica",
     day: "Domenica 17 Maggio",
     shortDay: "Domenica 17",
-    title: "Shopping e Partenza",
+    title: "Ultima Colazione e Partenza",
     events: [
       {
         id: "d1",
         time: "10:00",
-        title: "Via Toledo e Pignasecca",
-        description: "Passeggiata senza meta su Via Toledo per acquistare limoncello, calamite e babà in barattolo, magari allungandosi alla colorita Pignasecca.",
-        type: "attraction",
-        location: { lat: 40.8441, lng: 14.2475, mapQuery: "Pignasecca, Napoli" }
+        title: "Ultimo caffè da Attanasio",
+        description: "A due passi dalla stazione, il forno Attanasio è il modo migliore per chiudere il cerchio: ultima sfogliatella calda e cappuccino prima di ritirare i bagagli in hotel. Quello stesso posto che ci ha accolti giovedì mattina.",
+        type: "food",
+        image: "/images/sfogliatella_attanasio.png",
+        location: { lat: 40.8525, lng: 14.2694, mapQuery: "Sfogliatelle Attanasio Napoli" }
       },
       {
         id: "d2",
-        time: "12:30",
-        title: "Pranzo ai confini della Stazione",
-        description: "Per stare tranquilli ci si avvicina a Piazza Garibaldi. Un'ultima sostanziosa portata di mare o di terra e si ritirano i bagagli in hotel.",
+        time: "12:00",
+        title: "Pranzo vicino alla Stazione",
+        description: "Rimaniamo in zona Piazza Garibaldi per un ultimo pranzo senza fretta. Si ritirano i bagagli in hotel e ci si prepara alla partenza.",
         type: "food",
         location: { lat: 40.8510, lng: 14.2690, mapQuery: "Piazza Garibaldi, Napoli" }
       },
