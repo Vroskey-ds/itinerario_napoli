@@ -36,6 +36,7 @@ export const itineraryData = [
         title: "Vomero via Funicolare",
         description: "Dirigiamoci verso l'elegante quartiere collinare del Vomero prendendo la storica Funicolare o la Metro Linea 1.",
         type: "travel",
+        image: "/images/funicolare_napoli.png",
         location: { lat: 40.8441, lng: 14.2373, mapQuery: "Funicolare Centrale Napoli" }
       },
       {
@@ -75,15 +76,25 @@ export const itineraryData = [
       },
       {
         id: "v2",
-        time: "13:00",
+        time: "12:30",
         title: "Pranzo ai Tribunali",
         description: "Passeggiata nel cuore della Napoli greco-romana per una pizza a portafoglio classica (Sorbillo ai Tribunali o limitrofe).",
         type: "food",
+        image: "/images/via_tribunali.png",
         location: { lat: 40.8504, lng: 14.2568, mapQuery: "Via dei Tribunali Napoli" }
       },
       {
+        id: "v2_bis",
+        time: "14:30",
+        title: "Cristo Velato",
+        description: "Visita alla Cappella Sansevero per ammirare il capolavoro assoluto del Cristo Velato, voluto fortemente da Roberta! Ricordatevi di prenotare i biglietti online con largo anticipo.\n\n♿ Accessibilità: Presente una rampa all'ingresso, ma gli spazi interni sono molto ristretti.",
+        type: "attraction",
+        image: "/images/cristo_velato.png",
+        location: { lat: 40.8494, lng: 14.2543, mapQuery: "Museo Cappella Sansevero" }
+      },
+      {
         id: "v3",
-        time: "15:00",
+        time: "15:30",
         title: "Spaccanapoli e San Gregorio Armeno",
         description: "Via San Gregorio Armeno è il cuore pulsante e caotico dei maestri presepiai. Troverai statuine di ogni genere, dal classico pastore a Maradona. È coloratissima e sempre in festa.\n\n♿ Attenzione ai sampietrini e all'alta densità di persone.",
         type: "attraction",
@@ -92,7 +103,7 @@ export const itineraryData = [
       },
       {
         id: "v4",
-        time: "16:30",
+        time: "17:00",
         title: "Napoli Sotterranea (Divisione Gruppi)",
         description: "Un viaggio incredibile a 40 metri di profondità tra antichi acquedotti romani, cisterne e rifugi antiaerei del '900. I genitori e la ragazza vanno in esplorazione.\n\n♿ Accessibilità: Il sottosuolo non è adatto alle carrozzine. Puoi aspettare in Piazza San Gaetano dove ci sono vari caffè ai tavolini all'aperto, molto vicini all'ingresso.",
         type: "attraction",
