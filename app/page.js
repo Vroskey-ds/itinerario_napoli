@@ -12,7 +12,7 @@ const DynamicMap = dynamic(() => import('./components/DynamicMap'), {
 
 // A component for the individual event card that handles expansion
 function EventCard({ evt }) {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
 
   return (
     <div className="event-card">
@@ -21,7 +21,10 @@ function EventCard({ evt }) {
         onClick={() => setIsExpanded(!isExpanded)}
       >
         <div className="event-time-row">
-          <span className="event-time">{evt.time}</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <span className="event-time">{evt.time}</span>
+            {evt.optional && <span className="badge-optional">Opzionale</span>}
+          </div>
           <ChevronDown size={20} className={`expand-icon ${isExpanded ? 'expanded' : ''}`} />
         </div>
         <h3 className="event-title">{evt.title}</h3>
@@ -36,6 +39,44 @@ function EventCard({ evt }) {
             </div>
           )}
           <p className="event-desc">{evt.description}</p>
+
+          {evt.optional && evt.optionalAlternative && (
+            <div className="alternative-block">
+              <p className="alternative-label">Alternativa consigliata</p>
+              <strong className="alternative-title">{evt.optionalAlternative.title}</strong>
+              <p className="alternative-desc">{evt.optionalAlternative.description}</p>
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(evt.optionalAlternative.mapQuery)}`}
+                target="_blank"
+                rel="noreferrer"
+                className="btn-gmaps"
+              >
+                <Navigation size={18} /> Apri in Navigatore
+              </a>
+            </div>
+          )}
+
+          {evt.foodOptions && evt.foodOptions.length > 0 && (
+            <div className="food-options">
+              <p className="food-options-label">Dove mangiare</p>
+              {evt.foodOptions.map((opt, i) => (
+                <div key={i} className="food-option-item">
+                  <div className="food-option-info">
+                    <strong>{opt.title}</strong>
+                    <p>{opt.description}</p>
+                  </div>
+                  <a
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(opt.mapQuery)}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn-gmaps-sm"
+                  >
+                    <Navigation size={16} />
+                  </a>
+                </div>
+              ))}
+            </div>
+          )}
 
           <div className="event-actions">
             <a

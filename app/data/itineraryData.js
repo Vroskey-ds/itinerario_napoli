@@ -75,11 +75,10 @@ export const itineraryData = [
       {
         id: "g7",
         time: "20:00",
-        title: "Pizza da Zia Esterina Sorbillo",
-        description: "Scesi dal Vomero con la funicolare, a due passi troviamo una delle pizze fritte migliori della città. Cuore bollente di ricotta, cicoli e provola: il modo perfetto per concludere la giornata.",
+        title: "Cena da Kebest",
+        description: "A due passi da Piazza Vanvitelli, il kebab fit & fat di Giovanni Fois e Jana Foodporn. Due linee: Fit (pollo bianco) e Fat (cosce di pollo con pelle e topping ricchi). Il posto del momento al Vomero.",
         type: "food",
-        image: "/images/pizza_fritta.png",
-        location: { lat: 40.8407, lng: 14.2483, mapQuery: "Zia Esterina Sorbillo Pizza Fritta" }
+        location: { lat: 40.8418, lng: 14.2295, mapQuery: "Kebest Via Bernini Napoli Vomero" }
       }
     ]
   },
@@ -116,11 +115,16 @@ export const itineraryData = [
       {
         id: "v2",
         time: "13:15",
-        title: "Pranzo Antica Pizzeria ai Tribunali",
-        description: "A pochi passi dal Duomo, ci sediamo per riposare le gambe e gustare una verace Margherita in uno dei templi della pizza napoletana (Di Matteo o Sorbillo).",
+        title: "Pranzo ai Tribunali",
+        description: "A pochi passi dal Duomo, ci sediamo per riposare le gambe con una verace Margherita napoletana. Via dei Tribunali è la via della pizza per eccellenza.",
         type: "food",
         image: "/images/via_tribunali.png",
-        location: { lat: 40.8504, lng: 14.2568, mapQuery: "Via dei Tribunali Napoli" }
+        location: { lat: 40.8504, lng: 14.2568, mapQuery: "Via dei Tribunali Napoli" },
+        foodOptions: [
+          { title: "Pizzeria Di Matteo", description: "Pizza napoletana doc dal 1936, forno a legna e impasto a lunga lievitazione.", mapQuery: "Pizzeria Di Matteo Via dei Tribunali Napoli" },
+          { title: "Sorbillo", description: "Il tempio della pizza verace. Fila quasi garantita, ma ogni minuto vale.", mapQuery: "Pizzeria Sorbillo Via dei Tribunali Napoli" },
+          { title: "La Campagnola", description: "Trattoria storica con pasta al ragù, genovese e cucina casalinga napoletana.", mapQuery: "La Campagnola Via dei Tribunali Napoli" }
+        ]
       },
       {
         id: "v4",
@@ -129,7 +133,13 @@ export const itineraryData = [
         description: "Scendendo verso Piazza San Gaetano. Un viaggio immersivo a 40 metri di profondità tra acquedotti romani e rifugi antiaerei.\n\n♿ Accessibilità: Non adatto alle carrozzine. Attesa piacevole ai baretti all'aperto di Piazza San Gaetano.",
         type: "attraction",
         image: "/images/napoli_sotterranea.png",
-        location: { lat: 40.8507, lng: 14.2576, mapQuery: "Napoli Sotterranea" }
+        location: { lat: 40.8507, lng: 14.2576, mapQuery: "Napoli Sotterranea" },
+        optional: true,
+        optionalAlternative: {
+          title: "Museo Archeologico Nazionale (MANN)",
+          description: "Per chi soffre di claustrofobia è l'alternativa perfetta: ambienti enormi e ariosi con la più grande collezione al mondo di reperti di Pompei ed Ercolano. Perfetto anche con la pioggia. Ingresso €15, aperto tutti i giorni tranne il martedì.",
+          mapQuery: "Museo Archeologico Nazionale Napoli"
+        }
       },
       {
         id: "v3",
@@ -161,10 +171,15 @@ export const itineraryData = [
         id: "v5",
         time: "20:30",
         title: "Cena a Spaccanapoli",
-        description: "Rimanendo lì, la cena serale la passeremo in uno dei pittoreschi locali di Spaccanapoli.",
+        description: "Rimanendo in zona, la cena serale la passeremo in uno dei pittoreschi locali di Spaccanapoli.",
         type: "food",
         image: "/images/spaccanapoli.png",
-        location: { lat: 40.8498, lng: 14.2550, mapQuery: "Spaccanapoli" }
+        location: { lat: 40.8498, lng: 14.2550, mapQuery: "Spaccanapoli" },
+        foodOptions: [
+          { title: "Taverna Santa Chiara", description: "Cucina partenopea classica a due passi dal chiostro: genovese, ragù e frittura di pesce.", mapQuery: "Taverna Santa Chiara Napoli" },
+          { title: "La Baccalaria", description: "Osteria rinomata per il baccalà e le ricette più antiche della tradizione napoletana.", mapQuery: "La Baccalaria Napoli" },
+          { title: "Ristorante Bellini", description: "Classico di Piazza Bellini con vista sulla piazza: genovese di polpo e pasta e fagioli.", mapQuery: "Ristorante Bellini Piazza Bellini Napoli" }
+        ]
       }
     ]
   },
@@ -212,11 +227,16 @@ export const itineraryData = [
       {
         id: "s4",
         time: "13:15",
-        title: "Galleria Umberto I",
-        description: "Esattamente di fronte, la sfavillante Galleria Umberto I. Un pranzo o una zeppola prima di incamminarci sul mare.",
+        title: "Galleria Umberto I & Pranzo",
+        description: "Esattamente di fronte a Piazza Plebiscito, la sfavillante Galleria Umberto I con le sue volte in ferro e vetro. Ideale per scegliere dove pranzare prima di incamminarci verso il mare.",
         type: "attraction",
         image: "/images/galleria_umberto.png",
-        location: { lat: 40.8384, lng: 14.2497, mapQuery: "Galleria Umberto I Napoli" }
+        location: { lat: 40.8384, lng: 14.2497, mapQuery: "Galleria Umberto I Napoli" },
+        foodOptions: [
+          { title: "Da Ettore", description: "Trattoria storica nei Quartieri Spagnoli, celebre per pasta e patate con provola e piatti della nonna.", mapQuery: "Da Ettore Quartieri Spagnoli Napoli" },
+          { title: "Cantina della Tofa", description: "Osteria tipica con vino sfuso e cucina povera napoletana: cicerchie, baccalà, sartù di riso.", mapQuery: "Cantina della Tofa Napoli" },
+          { title: "Friggitoria Fiorenzano", description: "Il cuoppo di fritto misto più famoso della città, street food veloce e autentico vicino a Via Toledo.", mapQuery: "Friggitoria Fiorenzano Napoli" }
+        ]
       },
       {
         id: "s5",
@@ -268,7 +288,12 @@ export const itineraryData = [
         title: "Pranzo vicino alla Stazione",
         description: "Rimaniamo in zona Piazza Garibaldi per un ultimo pranzo senza fretta. Si ritirano i bagagli in hotel e ci si prepara alla partenza.",
         type: "food",
-        location: { lat: 40.8510, lng: 14.2690, mapQuery: "Piazza Garibaldi, Napoli" }
+        location: { lat: 40.8510, lng: 14.2690, mapQuery: "Piazza Garibaldi, Napoli" },
+        foodOptions: [
+          { title: "Mimì alla Ferrovia", description: "Il ristorante storico della zona stazione per eccellenza: sartù di riso, polpo verace e pesce azzurro.", mapQuery: "Mimì alla Ferrovia Napoli" },
+          { title: "L'Europeo di Mattozzi", description: "Storica insegna napoletana con ragù della domenica, frittura di paranza e pasta al forno.", mapQuery: "L'Europeo di Mattozzi Napoli" },
+          { title: "Trattoria Casanova", description: "Cucina casalinga napoletana a pochi passi dalla stazione: pasta e fagioli, trippa e scarole 'mbuttunate.", mapQuery: "Trattoria Casanova Napoli Piazza Garibaldi" }
+        ]
       },
       {
         id: "d3",

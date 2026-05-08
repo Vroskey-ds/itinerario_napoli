@@ -379,6 +379,122 @@ main {
 .tag-attraction { .event-dot { background: var(--color-attraction); } }
 .tag-hotel { .event-dot { background: var(--color-hotel); } }
 
+/* Optional badge */
+.badge-optional {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  background: #fef3c7;
+  color: #b45309;
+  border-radius: 999px;
+  border: 1px solid #fde68a;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+/* Alternative block */
+.alternative-block {
+  margin-bottom: 1rem;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 12px;
+  padding: 0.85rem;
+}
+
+.alternative-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #15803d;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.4rem;
+}
+
+.alternative-title {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.35rem;
+}
+
+.alternative-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin-bottom: 0.75rem;
+}
+
+/* Food options */
+.food-options {
+  margin-bottom: 1rem;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  border-radius: 12px;
+  padding: 0.85rem;
+}
+
+.food-options-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #c2410c;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.6rem;
+}
+
+.food-option-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid #fed7aa;
+}
+
+.food-option-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.food-option-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.food-option-info strong {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.15rem;
+}
+
+.food-option-info p {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.35;
+}
+
+.btn-gmaps-sm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  background: var(--accent-light);
+  color: var(--accent);
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.btn-gmaps-sm:hover {
+  background: var(--accent);
+  color: white;
+}
+
 /* Leaflet Markers */
 .custom-leaflet-marker {
   width: 30px;
