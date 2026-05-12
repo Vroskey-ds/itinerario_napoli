@@ -3,72 +3,82 @@ export const itineraryData = [
     id: "giovedi",
     day: "Giovedì 14 Maggio",
     shortDay: "Giovedì 14",
-    title: "Arrivo e Vomero",
+    title: "Ruoto a domicilio & Vomero",
     events: [
       {
         id: "g1",
-        time: "10:42",
+        time: "11:42",
         title: "Arrivo a Napoli Centrale",
-        description: "Arrivo in stazione con treno Frecciarossa. L'avventura all'ombra del Vesuvio inizia!",
+        description: "Arrivo in stazione con treno Frecciarossa. Diretti all'hotel — il ruoto di Cercola ci aspetta già lì!",
         type: "travel",
         location: { lat: 40.8528, lng: 14.2718, mapQuery: "Napoli Centrale" }
       },
       {
         id: "g2",
-        time: "11:00",
-        title: "Colazione da Attanasio",
-        description: "Rituale d'obbligo: prima sfogliatella calda appena fuori dalla stazione. Questo forno è famoso per servire le sfogliatelle, sia frolle che ricce, roventi e appena sfornate ad ogni ora.",
+        time: "12:00",
+        title: "Sfogliatella al volo da Attanasio",
+        description: "A 5 minuti a piedi dall'uscita della stazione (Vico Ferrovia 2/4). Prima sfogliatella rovente — riccia o frolla — da mangiare sul posto.\n\n♿ Percorso piano dalla stazione.",
         type: "food",
         image: "/images/sfogliatella_attanasio.png",
         location: { lat: 40.8525, lng: 14.2694, mapQuery: "Sfogliatelle Attanasio Napoli" }
       },
       {
         id: "g3",
-        time: "11:30",
+        time: "12:20",
         title: "Check-in al Jazz Hotel",
-        description: "A circa 10 minuti di cammino in linea retta dalla stazione, lasciamo le valigie all'hotel in Via Cesare Rosaroll per girare leggeri.",
+        description: "~10 minuti a piedi dalla stazione lungo Via Cesare Rosaroll. Si lasciano le valigie e ci si sistema.\n\n♿ Percorso piano dalla stazione.",
         type: "hotel",
         location: { lat: 40.8542, lng: 14.2646, mapQuery: "Via Cesare Rosaroll, 6, 80139 Napoli" }
       },
       {
+        id: "g-ruoto",
+        time: "12:45",
+        title: "Ruoto del Panificio Bobb — consegnato in hotel",
+        description: "Grazie alla gentilezza dei napoletani, il Panificio Michelangelo Bobb di Cercola ci ha spedito il ruoto direttamente al Jazz Hotel (€7 di spedizione). Pizza alta e soffice a lievito madre, cotta in teglia rotonda dal 1954 — la stessa che avremmo mangiato a Viale Michelangelo 27. Si mangia in camera o nella hall prima di salire al Vomero.",
+        type: "food",
+        location: { lat: 40.8542, lng: 14.2646, mapQuery: "Jazz Hotel Via Cesare Rosaroll Napoli" }
+      },
+      {
         id: "g5",
-        time: "12:15",
-        title: "Vomero via Funicolare",
-        description: "Camminiamo verso ovest fino a Via Toledo per prendere la storica Funicolare Centrale e salire sulla collina del Vomero. La giornata è tutta nostra!",
+        time: "13:30",
+        title: "Verso il Vomero via Funicolare",
+        description: "Dall'hotel si raggiunge il Vomero con Metro + Funicolare.\n\n🚇 Metro Linea 1: 'Garibaldi' → 'Toledo' (2 fermate, ~5 min, €1,30)\n🚡 A piedi da Toledo: ~5 min fino all'ingresso Funicolare Centrale in Via Toledo\n🚠 Funicolare Centrale: Toledo → Vomero (~7 min)\n\n♿ Metro L1 completamente accessibile con ascensori. Funicolare accessibile.",
         type: "travel",
         image: "/images/funicolare_napoli.png",
         location: { lat: 40.8441, lng: 14.2373, mapQuery: "Funicolare Centrale Napoli" }
       },
       {
         id: "g6",
-        time: "13:00",
+        time: "14:00",
         title: "Castel Sant'Elmo",
-        description: "Usciti dalla funicolare, una breve passeggiata porta alla fortezza stellare di Castel Sant'Elmo. Offre un panorama a 360° su tutto il Golfo di Napoli, il Vesuvio e le isole.\n\n♿ Accessibilità: Totalmente accessibile con sistema di ascensori interni.",
+        description: "Usciti dalla funicolare, ~5 min a piedi in salita leggera fino alla fortezza stellare. Panorama a 360° su Napoli, il Golfo e il Vesuvio. Ingresso €5.\n\n♿ Accessibilità: Ascensori interni per tutti i livelli principali.",
         type: "attraction",
         image: "/images/castel_santelmo.png",
         location: { lat: 40.8436, lng: 14.2386, mapQuery: "Castel Sant'Elmo" }
       },
       {
         id: "g-certosa",
-        time: "14:30",
-        title: "Certosa e Museo di San Martino",
-        description: "A due passi dal Castel Sant'Elmo, l'ex monastero certosino è uno dei complessi più belli di Napoli. Si visita la splendida chiesa barocca con affreschi di Luca Giordano, il Chiostro Grande e la sezione museale con il celebre Presepe Cuciniello (800 statuine settecentesche). Le terrazze panoramiche sono mozzafiato. Ingresso €6.\n\n♿ Accessibilità: Presente ascensore per i principali livelli.",
+        time: "15:30",
+        title: "Certosa e Museo di San Martino + Testa di Pulcinella",
+        description: "A 2 minuti a piedi da Castel Sant'Elmo. Ex monastero certosino con chiesa barocca (affreschi di Luca Giordano), Chiostro Grande e il celebre Presepe Cuciniello. Il museo custodisce anche la storica Testa di Pulcinella: la maschera che da secoli rappresenta l'anima di Napoli. Ingresso €6.\n\n♿ Accessibilità: Ascensore per i livelli principali. Alcuni cortili hanno lastricato storico irregolare.",
         type: "attraction",
+        image: "/images/pulcinella.jpg",
         location: { lat: 40.8422, lng: 14.2385, mapQuery: "Certosa di San Martino Napoli" }
       },
       {
         id: "g-villa",
-        time: "16:15",
+        time: "17:00",
         title: "Villa Floridiana e Parco",
-        description: "Breve passeggiata fino a questa villa neoclassica immersa in un romantico giardino all'inglese con vista sul Golfo. Il parco è gratuito e perfetto per una pausa rilassante. All'interno della villa il Museo Duca di Martina raccoglie oltre 6.000 opere di ceramiche e arti decorative (€4, chiude alle 17:00 — consigliamo il parco al tramonto).",
+        description: "~10 min a piedi dalla Certosa. Parco romantico all'inglese con vista sul Golfo — ideale per una pausa al tramonto. Il parco è gratuito. Il Museo Duca di Martina (ceramiche, €4) chiude alle 17:00, quindi si visita solo il giardino.\n\n♿ I vialetti principali del parco sono accessibili.",
         type: "attraction",
+        image: "/images/villa_floridiana.jpg",
         location: { lat: 40.8392, lng: 14.2283, mapQuery: "Villa Floridiana Napoli" }
       },
       {
         id: "g-scarlatti",
-        time: "17:30",
-        title: "Passeggiata su Via Scarlatti",
-        description: "Il salotto del Vomero: la via pedonale principale del quartiere, piena di boutique, caffè e locali per l'aperitivo. Un'atmosfera tutta napoletana lontana dai turisti del centro. Perfetta per uno spritz o un caffè prima di scendere.",
+        time: "17:45",
+        title: "Aperitivo su Via Scarlatti",
+        description: "La via pedonale principale del Vomero, piena di boutique e locali. Perfetta per uno spritz o un caffè seduti, lontano dal turismo del centro.\n\n♿ Via completamente pedonale e piatta.",
         type: "attraction",
         location: { lat: 40.8434, lng: 14.2297, mapQuery: "Via Scarlatti Napoli Vomero" }
       },
@@ -76,7 +86,7 @@ export const itineraryData = [
         id: "g7",
         time: "20:00",
         title: "Cena da Kebest",
-        description: "A due passi da Piazza Vanvitelli, il kebab fit & fat di Giovanni Fois e Jana Foodporn. Due linee: Fit (pollo bianco) e Fat (cosce di pollo con pelle e topping ricchi). Il posto del momento al Vomero.",
+        description: "A 5 min a piedi da Via Scarlatti, in Via Bernini 40 vicino a Piazza Vanvitelli. Il kebab fit & fat di Giovanni Fois e Jana Foodporn: linea Fit (pollo bianco) e linea Fat (cosce con pelle e topping ricchi).\n\n🚠 Rientro: Funicolare Centrale da Vomero → Toledo, poi Metro L1 Toledo → Garibaldi e a piedi all'hotel.",
         type: "food",
         location: { lat: 40.8418, lng: 14.2295, mapQuery: "Kebest Via Bernini Napoli Vomero" }
       }
@@ -90,96 +100,71 @@ export const itineraryData = [
     events: [
       {
         id: "v1_arrivo",
-        time: "10:00",
-        title: "Arrivo Genitori a Napoli Centrale",
-        description: "Ricongiungimento in Stazione Centrale! Accoglienza e via verso l'hotel per lasciare le loro valigie.",
-        type: "travel",
-        location: { lat: 40.8528, lng: 14.2718, mapQuery: "Napoli Centrale" }
+        time: "12:00",
+        title: "Arrivo Genitori all'Hotel",
+        description: "I genitori arrivano direttamente in macchina al Jazz Hotel. Ci ritroviamo tutti insieme per posare le valigie e partire alla conquista di Napoli!",
+        type: "hotel",
+        location: { lat: 40.8542, lng: 14.2646, mapQuery: "Via Cesare Rosaroll, 6, 80139 Napoli" }
       },
       {
-        id: "v1",
-        time: "10:15",
-        title: "Colazione da SfogliateLAB",
-        description: "La pasticceria è proprio di fronte all'uscita della stazione, all'angolo con Corso Novara — impossibile mancare. Nata agli inizi del '900 con la famiglia Ferrieri, unisce la tradizione pasticcera napoletana alla gastronomia locale: sfogliatelle, babà e rosticceria fresca. Il posto giusto per il primo assaggio di Napoli insieme ai genitori.",
+        id: "v2_antipasto",
+        time: "12:30",
+        title: "Antipasto: Pizza Fritta",
+        description: "Prima tappa culinaria: pizza fritta per strada, il vero street food napoletano. La pasta fritta si gonfia dorata nell'olio e si farcisce con ricotta, cicoli e pepe. Si mangia passeggiando!\n\n🚌 Spostamento dall'hotel (~1.4 km): Bus 202 da 'Rosaroll' verso 'Via dei Tribunali', oppure 10-15 min a piedi lungo Corso Umberto I.\n♿ Accessibilità: Bus dotato di pedana.",
         type: "food",
-        location: { lat: 40.8516, lng: 14.2724, mapQuery: "SfogliateLAB Napoli Piazza Garibaldi" }
-      },
-      {
-        id: "g4",
-        time: "11:45",
-        title: "Duomo di Napoli (San Gennaro)",
-        description: "Scendendo verso il centro storico si arriva al maestoso Duomo di Napoli. Qui è custodita l'ampolla col sangue di San Gennaro, tra le reliquie più venerate al mondo.\n\n♿ Accessibilità: Il percorso e la chiesa sono in piano e totalmente accessibili.",
-        type: "attraction",
-        location: { lat: 40.8528, lng: 14.2594, mapQuery: "Duomo di Napoli" }
+        image: "/images/pizza_fritta_new.jpg",
+        location: { lat: 40.8500, lng: 14.2635, mapQuery: "pizza fritta Napoli centro storico" }
       },
       {
         id: "v2",
         time: "13:15",
-        title: "Pranzo ai Tribunali",
-        description: "A pochi passi dal Duomo, ci sediamo per riposare le gambe con una verace Margherita napoletana. Via dei Tribunali è la via della pizza per eccellenza.",
+        title: "Pranzo: L'Antica Pizzeria Da Michele",
+        description: "Il pranzo vero e proprio è da Michele, il tempio della pizza napoletana. Solo due pizze nel menu: Marinara e Margherita. Nient'altro, nessun fronzolo — solo la perfezione.",
         type: "food",
         image: "/images/via_tribunali.png",
-        location: { lat: 40.8504, lng: 14.2568, mapQuery: "Via dei Tribunali Napoli" },
-        foodOptions: [
-          { title: "Pizzeria Di Matteo", description: "Pizza napoletana doc dal 1936, forno a legna e impasto a lunga lievitazione.", mapQuery: "Pizzeria Di Matteo Via dei Tribunali Napoli" },
-          { title: "Sorbillo", description: "Il tempio della pizza verace. Fila quasi garantita, ma ogni minuto vale.", mapQuery: "Pizzeria Sorbillo Via dei Tribunali Napoli" },
-          { title: "La Campagnola", description: "Trattoria storica con pasta al ragù, genovese e cucina casalinga napoletana.", mapQuery: "La Campagnola Via dei Tribunali Napoli" }
-        ]
+        location: { lat: 40.8501, lng: 14.2619, mapQuery: "L'Antica Pizzeria da Michele Via Cesare Sersale Napoli" }
       },
       {
-        id: "v4",
+        id: "v_pulcinella",
+        time: "14:00",
+        title: "Testa di Pulcinella",
+        description: "A due passi da Da Michele, in Vico del Fico al Purgatorio, si trova l'iconica statua di Lello Esposito: il grande busto bronzeo di Pulcinella, simbolo scaramantico di Napoli. Secondo la tradizione strofinare il naso porta fortuna!",
+        type: "attraction",
+        location: { lat: 40.8514, lng: 14.2588, mapQuery: "Testa di Pulcinella Vico del Fico al Purgatorio Napoli" }
+      },
+      {
+        id: "g4",
         time: "14:30",
-        title: "Napoli Sotterranea (Divisione Gruppi)",
-        description: "Scendendo verso Piazza San Gaetano. Un viaggio immersivo a 40 metri di profondità tra acquedotti romani e rifugi antiaerei.\n\n♿ Accessibilità: Non adatto alle carrozzine. Attesa piacevole ai baretti all'aperto di Piazza San Gaetano.",
+        title: "Duomo di Napoli (San Gennaro)",
+        description: "A pancia piena ci spostiamo verso il maestoso Duomo di Napoli (~500m a piedi da Da Michele). Qui è custodita l'ampolla col sangue di San Gennaro, reliquia tra le più venerate.\n\n♿ Accessibilità: Il Duomo è in piano e totalmente accessibile.",
         type: "attraction",
-        image: "/images/napoli_sotterranea.png",
-        location: { lat: 40.8507, lng: 14.2576, mapQuery: "Napoli Sotterranea" },
-        optional: true,
-        optionalAlternative: {
-          title: "Museo Archeologico Nazionale (MANN)",
-          description: "Per chi soffre di claustrofobia è l'alternativa perfetta: ambienti enormi e ariosi con la più grande collezione al mondo di reperti di Pompei ed Ercolano. Perfetto anche con la pioggia. Ingresso €15, aperto tutti i giorni tranne il martedì.",
-          mapQuery: "Museo Archeologico Nazionale Napoli"
-        }
-      },
-      {
-        id: "v3",
-        time: "16:00",
-        title: "San Gregorio Armeno",
-        description: "Usciti dalla Napoli Sotterranea, ci si trova proprio all'imbocco di San Gregorio Armeno, la via dei maestri presepiai. Perfettamente lineare.\n\n♿ Attenzione all'alta densità di persone.",
-        type: "attraction",
-        image: "/images/san_gregorio_armeno.png",
-        location: { lat: 40.8494, lng: 14.2573, mapQuery: "Via San Gregorio Armeno" }
-      },
-      {
-        id: "v2_bis",
-        time: "16:45",
-        title: "Cristo Velato",
-        description: "Sempre procedendo in modo lineare giungiamo alla limitrofa Cappella Sansevero per l'imperdibile Cristo Velato. (Da prenotare online!)\n\n♿ Accessibilità: Presente rampa, ma spazi molto ristretti intorno alla cappella.",
-        type: "attraction",
-        image: "/images/cristo_velato.png",
-        location: { lat: 40.8494, lng: 14.2543, mapQuery: "Museo Cappella Sansevero" }
+        image: "/images/duomo_napoli.jpg",
+        location: { lat: 40.8528, lng: 14.2594, mapQuery: "Duomo di Napoli" }
       },
       {
         id: "v1_bis",
-        time: "18:00",
+        time: "15:30",
         title: "Chiostro Maiolicato di Santa Chiara",
-        description: "Scendendo verso Spaccanapoli si arriva comodamente al Monastero di Santa Chiara. Perfetto per il tardo pomeriggio.\n\n♿ Accessibilità: Completamente in piano e all'aperto.",
+        description: "Dal Duomo scendiamo lungo Spaccanapoli fino al Monastero (~1 km a piedi). Entriamo prima che chiuda alle 17:00!\n\n♿ Accessibilità: Completamente in piano e all'aperto.",
         type: "attraction",
         location: { lat: 40.8465, lng: 14.2529, mapQuery: "Chiostro di Santa Chiara Napoli" }
       },
       {
+        id: "v4_mann",
+        time: "16:30",
+        title: "Museo Archeologico Nazionale (MANN)",
+        description: "Dal Chiostro di Santa Chiara ci spostiamo al MANN, uno dei musei più importanti al mondo: la più grande collezione di reperti di Pompei ed Ercolano, affreschi, mosaici e la celebre Collezione Farnese. Ingresso €15.\n\n🚌 Spostamento (~1.2 km): Metro L1 da 'Università' a 'Museo'.\n♿ Accessibilità: Stazione Metro e museo completamente accessibili in carrozzina.",
+        type: "attraction",
+        location: { lat: 40.8530, lng: 14.2507, mapQuery: "Museo Archeologico Nazionale Napoli" }
+      },
+      {
         id: "v5",
         time: "20:30",
-        title: "Cena a Spaccanapoli",
-        description: "Rimanendo in zona, la cena serale la passeremo in uno dei pittoreschi locali di Spaccanapoli.",
+        title: "Cena al Tandem",
+        description: "A cena andiamo al Tandem Spaccanapoli, celebre per il suo eccezionale ragù.\n\n🚌 Spostamento dal MANN (~1.5 km): Metro L1 da 'Museo' a 'Università', poi breve passeggiata.\n🚌 Rientro in hotel: Metro L1 da 'Università' o 'Duomo' a 'Garibaldi'.\n♿ Accessibilità: Stazioni dotate di ascensori per le carrozzine.",
         type: "food",
         image: "/images/spaccanapoli.png",
-        location: { lat: 40.8498, lng: 14.2550, mapQuery: "Spaccanapoli" },
-        foodOptions: [
-          { title: "Taverna Santa Chiara", description: "Cucina partenopea classica a due passi dal chiostro: genovese, ragù e frittura di pesce.", mapQuery: "Taverna Santa Chiara Napoli" },
-          { title: "La Baccalaria", description: "Osteria rinomata per il baccalà e le ricette più antiche della tradizione napoletana.", mapQuery: "La Baccalaria Napoli" },
-          { title: "Ristorante Bellini", description: "Classico di Piazza Bellini con vista sulla piazza: genovese di polpo e pasta e fagioli.", mapQuery: "Ristorante Bellini Piazza Bellini Napoli" }
-        ]
+        location: { lat: 40.8491, lng: 14.2548, mapQuery: "Tandem Via Paladino Napoli" }
       }
     ]
   },
@@ -190,10 +175,18 @@ export const itineraryData = [
     title: "Murales, Mare & Compleanno",
     events: [
       {
+        id: "s0_hotel",
+        time: "",
+        title: "Jazz Hotel (base)",
+        description: "Il punto di partenza della giornata: Jazz Hotel, Via Cesare Rosaroll 6.",
+        type: "hotel",
+        location: { lat: 40.8542, lng: 14.2646, mapQuery: "Via Cesare Rosaroll, 6, 80139 Napoli" }
+      },
+      {
         id: "s1",
         time: "10:00",
         title: "Stazione Arte Toledo",
-        description: "Partiamo prendendo la Metro 1. Scendendo a Toledo sarete avvolti dai celebri mosaici azzurri a tema oceano, una tra le metropolitane più belle del mondo.",
+        description: "Dall'hotel raggiungiamo Via Toledo (Distanza: ~2 km).\n\n🚌 Spostamento: Metro L1 da 'Garibaldi' a 'Toledo'.\n♿ Accessibilità: Entrambe le stazioni sono dotate di ascensori.\n\nScesi a Toledo, sarete avvolti dai celebri mosaici azzurri a tema oceano, una tra le metropolitane più belle del mondo.",
         type: "travel",
         location: { lat: 40.8415, lng: 14.2488, mapQuery: "Metro Toledo Napoli" }
       },
@@ -227,29 +220,41 @@ export const itineraryData = [
       {
         id: "s4",
         time: "13:15",
-        title: "Galleria Umberto I & Pranzo",
-        description: "Esattamente di fronte a Piazza Plebiscito, la sfavillante Galleria Umberto I con le sue volte in ferro e vetro. Ideale per scegliere dove pranzare prima di incamminarci verso il mare.",
-        type: "attraction",
+        title: "Pranzo: Trattoria Morè",
+        description: "Pranzo diviso in tappe per assaggiare di tutto! Come antipasto cuoppi fritti per strada e pizza a portafoglio. Poi pranziamo alla Trattoria Morè (Vico Tiratoio 5, Quartieri Spagnoli).",
+        type: "food",
         image: "/images/galleria_umberto.png",
-        location: { lat: 40.8384, lng: 14.2497, mapQuery: "Galleria Umberto I Napoli" },
-        foodOptions: [
-          { title: "Da Ettore", description: "Trattoria storica nei Quartieri Spagnoli, celebre per pasta e patate con provola e piatti della nonna.", mapQuery: "Da Ettore Quartieri Spagnoli Napoli" },
-          { title: "Cantina della Tofa", description: "Osteria tipica con vino sfuso e cucina povera napoletana: cicerchie, baccalà, sartù di riso.", mapQuery: "Cantina della Tofa Napoli" },
-          { title: "Friggitoria Fiorenzano", description: "Il cuoppo di fritto misto più famoso della città, street food veloce e autentico vicino a Via Toledo.", mapQuery: "Friggitoria Fiorenzano Napoli" }
-        ]
+        location: { lat: 40.8388, lng: 14.2472, mapQuery: "Trattoria More Vico Tiratoio Napoli" }
+      },
+      {
+        id: "s4b",
+        time: "14:30",
+        title: "Solo per Massimo: Trippa da Fiorenzano",
+        description: "Tappa facoltativa solo per i più avventurosi! La Friggitoria Fiorenzano è il posto giusto per assaggiare la trippa napoletana, uno street food autentico e poco turistico.",
+        type: "food",
+        location: { lat: 40.8368, lng: 14.2487, mapQuery: "Friggitoria Fiorenzano Napoli Via Toledo" }
+      },
+      {
+        id: "s-sga",
+        time: "14:45",
+        title: "San Gregorio Armeno",
+        description: "Dal cuore dei Quartieri scendiamo verso Spaccanapoli per addentrarci in San Gregorio Armeno, la via dei maestri presepiai. (~10 min a piedi)\n\n♿ Attenzione all'alta densità di persone.",
+        type: "attraction",
+        image: "/images/san_gregorio_armeno.png",
+        location: { lat: 40.8494, lng: 14.2573, mapQuery: "Via San Gregorio Armeno" }
       },
       {
         id: "s5",
-        time: "15:00",
+        time: "16:30",
         title: "Verso Castel dell'Ovo",
-        description: "Scendendo dritto si incontra l'isolotto di Megaride e l'iconico Castel dell'Ovo, costeggiato dal molo.",
+        description: "Ci muoviamo verso l'isolotto di Megaride e l'iconico Castel dell'Ovo (Distanza: ~2 km da Spaccanapoli).\n\n🚌 Spostamento: Bus 201 da 'Piazza Municipio' fino a 'Piazza Vittoria'.\n♿ Accessibilità: Bus dotato di pedana. Lungomare e castello sono accessibili e in piano.",
         type: "attraction",
         image: "/images/castel_dellovo.png",
         location: { lat: 40.8282, lng: 14.2483, mapQuery: "Castel dell'Ovo Napoli" }
       },
       {
         id: "s6",
-        time: "17:00",
+        time: "18:00",
         title: "Passeggiata sul Lungomare Caracciolo",
         description: "Il maestoso Lungomare è pedonale, ampio e completamente in piano. Godetevi la tranquillità in compagnia del sole calante.",
         type: "attraction",
@@ -259,11 +264,11 @@ export const itineraryData = [
       {
         id: "s7",
         time: "20:30",
-        title: "Cena Compleanno: Nennella",
-        description: "Torniamo vicino ai Quartieri con la funicolare/metro per festeggiare. L'Antica Trattoria da Nennella (prenotate possibilmente!) vi avvolgerà nel tipico teatro-chiasso napoletano a suon di pasta e patate.",
+        title: "Cena Compleanno: Nennella (o Il Ruotino)",
+        description: "Torniamo verso i Quartieri per festeggiare. Speriamo di trovare posto all'Antica Trattoria da Nennella. In alternativa, il piano B è Il Ruotino!\n\n🚌 Spostamento dal mare (> 1.5 km): Bus 151/128 (direzione centro) da Vittoria a San Carlo/Medina, o in alternativa consigliato il Taxi.\n♿ Accessibilità: I taxi napoletani sono una garanzia e un'ottima soluzione per chi è in carrozzina.",
         type: "food",
         image: "/images/nennella_napoli.png",
-        location: { lat: 40.8407, lng: 14.2476, mapQuery: "Trattoria da Nennella" }
+        location: { lat: 40.8406, lng: 14.2468, mapQuery: "Trattoria da Nennella Via Concezione a Montecalvario Napoli" }
       }
     ]
   },
@@ -274,19 +279,27 @@ export const itineraryData = [
     title: "Ultima Colazione e Partenza",
     events: [
       {
-        id: "d1",
+        id: "d0_hotel",
+        time: "",
+        title: "Jazz Hotel (base)",
+        description: "Il punto di partenza della giornata: Jazz Hotel, Via Cesare Rosaroll 6.",
+        type: "hotel",
+        location: { lat: 40.8542, lng: 14.2646, mapQuery: "Via Cesare Rosaroll, 6, 80139 Napoli" }
+      },
+      {
+        id: "d0_cristo",
         time: "10:00",
-        title: "Ultimo caffè da Attanasio",
-        description: "A due passi dalla stazione, il forno Attanasio è il modo migliore per chiudere il cerchio: ultima sfogliatella calda e cappuccino prima di ritirare i bagagli in hotel. Quello stesso posto che ci ha accolti giovedì mattina.",
-        type: "food",
-        image: "/images/sfogliatella_attanasio.png",
-        location: { lat: 40.8525, lng: 14.2694, mapQuery: "Sfogliatelle Attanasio Napoli" }
+        title: "Cristo Velato — Tour Prenotato",
+        description: "Iniziamo l'ultima mattina con il capolavoro: tour guidato di 30 minuti alla Cappella Sansevero per ammirare il Cristo Velato. Una scultura che lascia senza parole — il marmo sembra tessuto vero.\n\n🚌 Spostamento dalla zona hotel (~2 km): Metro L1 da 'Garibaldi' a 'Università', poi 5 min a piedi.\n♿ Accessibilità: Presente rampa, ma spazi molto ristretti intorno alla cappella.",
+        type: "attraction",
+        image: "/images/cristo_velato.png",
+        location: { lat: 40.8494, lng: 14.2543, mapQuery: "Museo Cappella Sansevero" }
       },
       {
         id: "d2",
-        time: "12:00",
+        time: "11:00",
         title: "Pranzo vicino alla Stazione",
-        description: "Rimaniamo in zona Piazza Garibaldi per un ultimo pranzo senza fretta. Si ritirano i bagagli in hotel e ci si prepara alla partenza.",
+        description: "Dopo il Cristo Velato, rientro in zona hotel per ritirare i bagagli e sedersi per un ultimo pranzo senza fretta prima della partenza.",
         type: "food",
         location: { lat: 40.8510, lng: 14.2690, mapQuery: "Piazza Garibaldi, Napoli" },
         foodOptions: [

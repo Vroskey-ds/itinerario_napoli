@@ -145,7 +145,9 @@ export default function Home() {
             </div>
 
             <div className="timeline">
-              {activeDay.events.map((evt, idx) => (
+              {activeDay.events
+                .filter(evt => evt.time !== '')
+                .map((evt, idx) => (
                 <div key={evt.id} className="timeline-event">
                   <span className={`event-dot tag-${evt.type}`}>{idx + 1}</span>
                   <EventCard evt={evt} />
