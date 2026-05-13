@@ -125,18 +125,27 @@ export const itineraryData = [
         location: { lat: 40.8501, lng: 14.2619, mapQuery: "L'Antica Pizzeria da Michele Via Cesare Sersale Napoli" }
       },
       {
+        id: "v2_limonata",
+        time: "15:15",
+        title: "Limonata a Cosce Aperte",
+        description: "Dopo la pizza, non c'è niente di meglio di una 'bella limonata a cosce aperte' dall'acquaiolo! Acqua frizzante, limone e un pizzico di bicarbonato che fa eruttare il bicchiere come il Vesuvio. Si beve tutto d'un fiato a gambe divaricate per non bagnarsi i pantaloni.",
+        type: "food",
+        image: "/images/limonata_cosce_aperte.png",
+        location: { lat: 40.8505, lng: 14.2600, mapQuery: "Acquaiolo Napoli" }
+      },
+      {
         id: "v_pulcinella",
-        time: "15:00",
+        time: "15:30",
         title: "Testa di Pulcinella",
-        description: "A due passi da Da Michele, in Vico del Fico al Purgatorio, si trova l'iconica statua di Lello Esposito: il grande busto bronzeo di Pulcinella, simbolo scaramantico di Napoli. Secondo la tradizione strofinare il naso porta fortuna!",
+        description: "A due passi, in Vico del Fico al Purgatorio, si trova l'iconica statua di Lello Esposito: il grande busto bronzeo di Pulcinella, simbolo scaramantico di Napoli. Secondo la tradizione strofinare il naso porta fortuna!",
         type: "attraction",
         location: { lat: 40.8514, lng: 14.2588, mapQuery: "Testa di Pulcinella Vico del Fico al Purgatorio Napoli" }
       },
       {
         id: "g4",
-        time: "15:30",
+        time: "15:45",
         title: "Duomo di Napoli (San Gennaro)",
-        description: "A pancia piena ci spostiamo verso il maestoso Duomo di Napoli (~500m a piedi da Da Michele). Qui è custodita l'ampolla col sangue di San Gennaro, reliquia tra le più venerate.\n\n♿ Accessibilità: Il Duomo è in piano e totalmente accessibile.",
+        description: "A pancia piena ci spostiamo verso il maestoso Duomo di Napoli. Qui è custodita l'ampolla col sangue di San Gennaro, reliquia tra le più venerate.\n\n♿ Accessibilità: Il Duomo è in piano e totalmente accessibile.",
         type: "attraction",
         image: "/images/duomo_napoli_new.jpg",
         location: { lat: 40.8528, lng: 14.2594, mapQuery: "Duomo di Napoli" }
@@ -200,6 +209,14 @@ export const itineraryData = [
         location: { lat: 40.8386, lng: 14.2452, mapQuery: "Murales Maradona Napoli" }
       },
       {
+        id: "s2_mercato",
+        time: "11:00",
+        title: "Giro al Mercato della Pignasecca",
+        description: "Sempre in zona Quartieri Spagnoli, ci addentriamo nella Pignasecca: il mercato all'aperto più antico di Napoli. È un trionfo di voci, profumi e colori tra banchi di pesce, frutta e street food, perfetto per calarsi nell'atmosfera più verace.",
+        type: "attraction",
+        location: { lat: 40.8445, lng: 14.2475, mapQuery: "Mercato della Pignasecca Napoli" }
+      },
+      {
         id: "s-poppella",
         time: "11:30",
         title: "Fiocchi di Neve da Poppella",
@@ -237,8 +254,8 @@ export const itineraryData = [
       {
         id: "s-sga",
         time: "14:45",
-        title: "San Gregorio Armeno",
-        description: "Dal cuore dei Quartieri scendiamo verso Spaccanapoli per addentrarci in San Gregorio Armeno, la via dei maestri presepiai. (~10 min a piedi)\n\n♿ Attenzione all'alta densità di persone.",
+        title: "San Gregorio Armeno (Artigiani e Presepi)",
+        description: "Dal cuore dei Quartieri scendiamo verso Spaccanapoli per addentrarci in San Gregorio Armeno. Questa è la famosa 'via degli artigiani' dove le botteghe realizzano a mano i tradizionali presepi napoletani e le iconiche 'teste grosse' (le caricature dei personaggi famosi). È vicina e comodissima per continuare l'itinerario!\n\n♿ Attenzione all'alta densità di persone.",
         type: "attraction",
         image: "/images/san_gregorio_armeno.png",
         location: { lat: 40.8494, lng: 14.2573, mapQuery: "Via San Gregorio Armeno" }
