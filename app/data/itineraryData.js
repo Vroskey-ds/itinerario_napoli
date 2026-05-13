@@ -100,7 +100,7 @@ export const itineraryData = [
     events: [
       {
         id: "v1_arrivo",
-        time: "12:00",
+        time: "13:00",
         title: "Arrivo Genitori all'Hotel",
         description: "I genitori arrivano direttamente in macchina al Jazz Hotel. Ci ritroviamo tutti insieme per posare le valigie e partire alla conquista di Napoli!",
         type: "hotel",
@@ -108,7 +108,7 @@ export const itineraryData = [
       },
       {
         id: "v2_antipasto",
-        time: "12:30",
+        time: "13:30",
         title: "Antipasto: Pizza Fritta",
         description: "Prima tappa culinaria: pizza fritta per strada, il vero street food napoletano. La pasta fritta si gonfia dorata nell'olio e si farcisce con ricotta, cicoli e pepe. Si mangia passeggiando!\n\n🚌 Spostamento dall'hotel (~1.4 km): Bus 202 da 'Rosaroll' verso 'Via dei Tribunali', oppure 10-15 min a piedi lungo Corso Umberto I.\n♿ Accessibilità: Bus dotato di pedana.",
         type: "food",
@@ -117,7 +117,7 @@ export const itineraryData = [
       },
       {
         id: "v2",
-        time: "13:15",
+        time: "14:15",
         title: "Pranzo: L'Antica Pizzeria Da Michele",
         description: "Il pranzo vero e proprio è da Michele, il tempio della pizza napoletana. Solo due pizze nel menu: Marinara e Margherita. Nient'altro, nessun fronzolo — solo la perfezione.",
         type: "food",
@@ -126,7 +126,7 @@ export const itineraryData = [
       },
       {
         id: "v_pulcinella",
-        time: "14:00",
+        time: "15:00",
         title: "Testa di Pulcinella",
         description: "A due passi da Da Michele, in Vico del Fico al Purgatorio, si trova l'iconica statua di Lello Esposito: il grande busto bronzeo di Pulcinella, simbolo scaramantico di Napoli. Secondo la tradizione strofinare il naso porta fortuna!",
         type: "attraction",
@@ -134,16 +134,16 @@ export const itineraryData = [
       },
       {
         id: "g4",
-        time: "14:30",
+        time: "15:30",
         title: "Duomo di Napoli (San Gennaro)",
         description: "A pancia piena ci spostiamo verso il maestoso Duomo di Napoli (~500m a piedi da Da Michele). Qui è custodita l'ampolla col sangue di San Gennaro, reliquia tra le più venerate.\n\n♿ Accessibilità: Il Duomo è in piano e totalmente accessibile.",
         type: "attraction",
-        image: "/images/duomo_napoli.jpg",
+        image: "/images/duomo_napoli_new.jpg",
         location: { lat: 40.8528, lng: 14.2594, mapQuery: "Duomo di Napoli" }
       },
       {
         id: "v1_bis",
-        time: "15:30",
+        time: "16:30",
         title: "Chiostro Maiolicato di Santa Chiara",
         description: "Dal Duomo scendiamo lungo Spaccanapoli fino al Monastero (~1 km a piedi). Entriamo prima che chiuda alle 17:00!\n\n♿ Accessibilità: Completamente in piano e all'aperto.",
         type: "attraction",
@@ -151,7 +151,7 @@ export const itineraryData = [
       },
       {
         id: "v4_mann",
-        time: "16:30",
+        time: "17:30",
         title: "Museo Archeologico Nazionale (MANN)",
         description: "Dal Chiostro di Santa Chiara ci spostiamo al MANN, uno dei musei più importanti al mondo: la più grande collezione di reperti di Pompei ed Ercolano, affreschi, mosaici e la celebre Collezione Farnese. Ingresso €15.\n\n🚌 Spostamento (~1.2 km): Metro L1 da 'Università' a 'Museo'.\n♿ Accessibilità: Stazione Metro e museo completamente accessibili in carrozzina.",
         type: "attraction",
@@ -264,11 +264,15 @@ export const itineraryData = [
       {
         id: "s7",
         time: "20:30",
-        title: "Cena Compleanno: Nennella (o Il Ruotino)",
-        description: "Torniamo verso i Quartieri per festeggiare. Speriamo di trovare posto all'Antica Trattoria da Nennella. In alternativa, il piano B è Il Ruotino!\n\n🚌 Spostamento dal mare (> 1.5 km): Bus 151/128 (direzione centro) da Vittoria a San Carlo/Medina, o in alternativa consigliato il Taxi.\n♿ Accessibilità: I taxi napoletani sono una garanzia e un'ottima soluzione per chi è in carrozzina.",
+        title: "Cena Compleanno: Nennella",
+        description: "Torniamo verso i Quartieri per festeggiare. L'Antica Trattoria da Nennella vi avvolgerà nel tipico teatro-chiasso napoletano a suon di pasta e patate.\n\n🚌 Spostamento dal mare (> 1.5 km): Bus 151/128 (direzione centro) da Vittoria a San Carlo/Medina, o in alternativa consigliato il Taxi.\n♿ I taxi napoletani sono una garanzia e un'ottima soluzione per chi è in carrozzina.",
         type: "food",
         image: "/images/nennella_napoli.png",
-        location: { lat: 40.8406, lng: 14.2468, mapQuery: "Trattoria da Nennella Via Concezione a Montecalvario Napoli" }
+        location: { lat: 40.8406, lng: 14.2468, mapQuery: "Trattoria da Nennella Via Concezione a Montecalvario Napoli" },
+        foodOptions: [
+          { title: "Da Maria Trattoria 1964", description: "Trattoria storica dei Quartieri Spagnoli dal 1964, gestita da Maria e suo figlio Gino. Cucina napoletana verace: ragù, genovese e piatti della tradizione.", mapQuery: "Da Maria Trattoria 1964 Vico Tiratoio Napoli" },
+          { title: "Trattoria da Concetta", description: "Cucina casalinga napoletana in Via Speranzella 19, nel cuore dei Quartieri Spagnoli. Atmosfera familiare e piatti della nonna.", mapQuery: "Trattoria da Concetta Via Speranzella Napoli" }
+        ]
       }
     ]
   },

@@ -207,7 +207,7 @@ main {
   align-items: center;
   justify-content: center;
   font-size: 0.75rem;
-  font-weight: bold;
+  font-weight: 800;
   color: white;
   box-shadow: 0 0 0 4px var(--bg-color);
   z-index: 2;
@@ -374,10 +374,10 @@ main {
 }
 
 /* Tags */
-.tag-travel { .event-dot { background: var(--color-travel); } }
-.tag-food { .event-dot { background: var(--color-food); } }
-.tag-attraction { .event-dot { background: var(--color-attraction); } }
-.tag-hotel { .event-dot { background: var(--color-hotel); } }
+.event-dot.tag-travel    { background: var(--color-travel); color: #fff; }
+.event-dot.tag-food      { background: var(--color-food); color: #fff; }
+.event-dot.tag-attraction{ background: var(--color-attraction); color: #fff; }
+.event-dot.tag-hotel     { background: var(--color-hotel); color: #713f12; }
 
 /* Optional badge */
 .badge-optional {

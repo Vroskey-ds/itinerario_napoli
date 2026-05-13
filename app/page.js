@@ -58,7 +58,7 @@ function EventCard({ evt }) {
 
           {evt.foodOptions && evt.foodOptions.length > 0 && (
             <div className="food-options">
-              <p className="food-options-label">Dove mangiare</p>
+              <p className="food-options-label">Alternative</p>
               {evt.foodOptions.map((opt, i) => (
                 <div key={i} className="food-option-item">
                   <div className="food-option-info">
@@ -148,11 +148,11 @@ export default function Home() {
               {activeDay.events
                 .filter(evt => evt.time !== '')
                 .map((evt, idx) => (
-                <div key={evt.id} className="timeline-event">
-                  <span className={`event-dot tag-${evt.type}`}>{idx + 1}</span>
-                  <EventCard evt={evt} />
-                </div>
-              ))}
+                  <div key={evt.id} className="timeline-event">
+                    <span className={`event-dot tag-${evt.type}`}>{idx + 1}</span>
+                    <EventCard evt={evt} />
+                  </div>
+                ))}
             </div>
           </div>
         )}
